@@ -1,0 +1,4 @@
+.mypy_cache
+.gitignore
+*pyc
+__pycache__

@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "refferal-system"
+version = "0.1.0"
+description = ""
+authors = ["sanek <alexandr.panteleev2000@gmail.com>"]
+readme = "README.md"
+packages = [{include = "refferal_system"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.4"
+djangorestframework = "^3.14.0"
+python-dotenv = "^1.0.0"
+psycopg2-binary = "^2.9.7"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+mypy = "^1.5.1"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
