@@ -8,7 +8,15 @@ docker-compose up --build
 
 * Apply migrations
 ```
-docker-compose run django python manage.py migrate
+docker-compose run app python manage.py migrate
+```
+
+*From 3rd terminal*
+
+* Check db data
+```
+docker-compose exec db bash
+sudo psql -U postgres
 ```
 
 ## Endpoints
